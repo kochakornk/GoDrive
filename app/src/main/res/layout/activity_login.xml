@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suwan.godrivefinalproject.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_marginBottom="434dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getmovetext"
+        android:text="Get Moving with GoDrive"
+        android:layout_marginTop="230dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLogin"
+        android:layout_below="@+id/getmovetext"
+        android:hint="ENTER YOUR EMAIL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordLogin"
+        android:layout_below="@+id/emailLogin"
+        android:hint="ENTER YOU PASSWORD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logincreate"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_alignEnd="@+id/getmovetext"
+        android:layout_marginEnd="48dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/login"
+            android:text="LOG-IN"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="SignIn"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="CREATE"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:onClick="createAccount"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

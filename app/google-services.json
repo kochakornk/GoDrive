@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "541447431757",
+    "firebase_url": "https://godrivefinalproject.firebaseio.com",
+    "project_id": "godrivefinalproject",
+    "storage_bucket": "godrivefinalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541447431757:android:c27fe34e7ffeddfe",
+        "android_client_info": {
+          "package_name": "com.example.suwan.godrivefinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541447431757-po2b8plh3rkkmm23c371mrgh0gmc6i6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.suwan.godrivefinalproject",
+            "certificate_hash": "16c2cae32e6544cf5f1b3ae0bd8f69cee03a7f0a"
+          }
+        },
+        {
+          "client_id": "541447431757-fnvmna6n5aifq9cao4jsbtoaffbfacs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbvMNi851bEhyK5X5iazaODS8xWUevSD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541447431757-fnvmna6n5aifq9cao4jsbtoaffbfacs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
