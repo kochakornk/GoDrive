@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -170,14 +169,13 @@ public class WhereActivity extends AppCompatActivity implements
         }
         if (id == R.id.bar_logout) {
             //logout();
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(WhereActivity.this, LoginActivity.class);
+            startActivity(intent);
+
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    public void signOut(View view) {
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(WhereActivity.this, LoginActivity.class);
-        startActivity(intent);
-    }
 }

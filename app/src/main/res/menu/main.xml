@@ -13,6 +13,6 @@
         android:id="@+id/bar_logout"
         android:orderInCategory="100"
         app:showAsAction="never"
-        android:onClick="signOut"/>
+        />
 
 </menu>
