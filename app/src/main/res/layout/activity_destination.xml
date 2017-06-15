@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.suwan.godrivefinalproject.DestinationActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter your Destination:"
+        android:id="@+id/desText"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeEdit"
+        android:layout_below="@+id/desText"
+        android:hint="Place"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateEdit"
+        android:layout_below="@+id/placeEdit"
+        android:hint="Date"
+        android:inputType="date"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeEdit"
+        android:layout_below="@+id/dateEdit"
+        android:hint="Time"
+        android:inputType="time"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="REQUEST"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="desRequest"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="CANCLE"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="desCancle"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
