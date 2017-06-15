@@ -109,6 +109,8 @@ public class WhereActivity extends AppCompatActivity implements
                 map.addMarker(new MarkerOptions()
                         .position(myLatLng)
                         .title("My Location"));
+                //Intent intent = new Intent(this,DestinationActivity.class);
+                //startActivity(intent);
             } else {
                 mLatitudeText.setText("Latitude");
                 mLongtitudeText.setText("Longtitude");
@@ -179,3 +181,4 @@ public class WhereActivity extends AppCompatActivity implements
     }
 
 }
+
