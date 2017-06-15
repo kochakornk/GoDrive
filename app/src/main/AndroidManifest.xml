@@ -19,18 +19,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".CreateActivity" />
-        <activity android:name=".ComeActivity" />
-        <activity android:name=".DriverActivity" />
-        <activity android:name=".WhereActivity"></activity>
+        <activity android:name=".WhereActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAeh41qLHFdZup23jZJRfDW0-073aJn6yA"/>
+            android:value="AIzaSyAeh41qLHFdZup23jZJRfDW0-073aJn6yA" />
 
+        <activity android:name=".DestinationActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".DriverActivity" />
+        <activity android:name=".ConfirmActivity"></activity>
     </application>
 
 </manifest>
