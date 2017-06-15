@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "541447431757-v3iqrbgo97vadmopq84trdptdtc70d1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.suwan.godrivefinalproject",
+            "certificate_hash": "89b820b0c65b9f32c396bd81ac3bb8ebb6c6cd86"
+          }
+        },
+        {
           "client_id": "541447431757-po2b8plh3rkkmm23c371mrgh0gmc6i6j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
