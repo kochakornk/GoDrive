@@ -1,6 +1,5 @@
 package com.example.suwan.godrivefinalproject;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,12 +14,12 @@ public class DestinationActivity extends AppCompatActivity {
     }
 
     public void desRequest(View view) {
-        Intent intent = new Intent(this,ListActivity.class);
-        startActivity(intent);
+        Intent intent3 = new Intent(DestinationActivity.this, ListActivity.class);
+        startActivity(intent3);
     }
 
     public void desCancle(View view) {
-        Intent intent = new Intent(this,WhereActivity.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(DestinationActivity.this, WhereActivity.class);
+        startActivity(intent2);
     }
 }
