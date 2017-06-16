@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text" />
 
     <EditText
         android:layout_width="350dp"
@@ -26,7 +26,7 @@
         android:inputType="text"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="350dp"
@@ -37,7 +37,7 @@
         android:inputType="date"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp" />
 
     <EditText
         android:layout_width="350dp"
@@ -48,14 +48,14 @@
         android:inputType="time"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/timeEdit"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp">
+        android:layout_marginBottom="100dp">
 
         <Button
             android:layout_width="120dp"
@@ -63,7 +63,7 @@
             android:text="REQUEST"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:onClick="desRequest"/>
+            android:onClick="desRequest" />
 
         <Button
             android:layout_width="120dp"
@@ -72,7 +72,7 @@
             android:textStyle="bold"
             android:textSize="20dp"
             android:layout_marginLeft="20dp"
-            android:onClick="desCancle"/>
+            android:onClick="desCancle" />
 
     </LinearLayout>
 

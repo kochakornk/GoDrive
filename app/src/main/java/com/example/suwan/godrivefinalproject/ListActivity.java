@@ -21,18 +21,19 @@ public class ListActivity extends AppCompatActivity {
             R.drawable.tae,
 
     };
+
     private String[] nearby = {
             "Nearby love",
             "Nearby 800 metre",
             "Nearby 1 km",
 
     };
+
     private String[] phone = {
             "0819999999",
             "0999999999",
             "0888888888",
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +56,6 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
 //        final Context context = this;
 //        list1.

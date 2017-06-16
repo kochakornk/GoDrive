@@ -38,6 +38,7 @@ public class WhereActivity extends AppCompatActivity implements
     TextView mLatitudeText;
     TextView mLongtitudeText;
     GoogleMap map;
+
     private Marker myLocationMarker;
 
     public static final int MY_PERMISSIONS_REQUEST =1;

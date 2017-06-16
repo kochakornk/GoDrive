@@ -6,13 +6,12 @@
         android:title="Setting"
         android:id="@+id/bar_setting"
         android:orderInCategory="100"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
     <item
         android:title="Log-out"
         android:id="@+id/bar_logout"
         android:orderInCategory="100"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
 
 </menu>

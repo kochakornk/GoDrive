@@ -24,12 +24,15 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:textColor="#ffa31a" />
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textStyle="bold"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp" />
+
     </LinearLayout>
+
 </LinearLayout>

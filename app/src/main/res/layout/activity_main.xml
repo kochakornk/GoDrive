@@ -13,7 +13,7 @@
         android:id="@+id/godrive"
         android:src="@drawable/godrive"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="150dp" />
 
     <Button
         android:layout_width="150dp"
@@ -24,6 +24,6 @@
         android:text="Go"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:onClick="Start"/>
+        android:onClick="Start" />
 
 </RelativeLayout>
