@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,17 +26,19 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class WhereActivity extends AppCompatActivity implements
-        ConnectionCallbacks, OnConnectionFailedListener, OnMapReadyCallback{
+        ConnectionCallbacks, OnConnectionFailedListener, OnMapReadyCallback, GoogleMap.OnMarkerClickListener{
 
     GoogleApiClient mGoogleApiClient;
     Location mLastLocation;
     TextView mLatitudeText;
     TextView mLongtitudeText;
     GoogleMap map;
+    private Marker myLocationMarker;
 
     public static final int MY_PERMISSIONS_REQUEST =1;
     @Override
@@ -71,7 +74,7 @@ public class WhereActivity extends AppCompatActivity implements
                     MY_PERMISSIONS_REQUEST);
         } else {
             // Launch the camera if the permission exists
-            launchLocation();
+           // launchLocation();
         }
     }
 
@@ -106,16 +109,21 @@ public class WhereActivity extends AppCompatActivity implements
                         CameraUpdateFactory.newLatLng(myLatLng)
                 );
 
-                map.addMarker(new MarkerOptions()
+                myLocationMarker = map.addMarker(new MarkerOptions()
                         .position(myLatLng)
                         .title("My Location"));
+                myLocationMarker.setTag("mylocation");
                 //Intent intent = new Intent(this,DestinationActivity.class);
                 //startActivity(intent);
+                map.setOnMarkerClickListener(this);
+
             } else {
                 mLatitudeText.setText("Latitude");
                 mLongtitudeText.setText("Longtitude");
             }
+
         }
+
     }
 
     @Override
@@ -151,7 +159,9 @@ public class WhereActivity extends AppCompatActivity implements
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         this.map = googleMap;
+        launchLocation();
     }
 
     @Override
@@ -180,5 +190,14 @@ public class WhereActivity extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        Log.e("----", "hey");
+        if(marker.getTag().equals("mylocation")) {
+            Intent intent = new Intent(this,DestinationActivity.class);
+            startActivity(intent);
+        }
+        return false;
+    }
 }
 
