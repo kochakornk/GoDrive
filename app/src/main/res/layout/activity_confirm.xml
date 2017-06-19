@@ -59,14 +59,26 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/driverText"
+        android:layout_below="@+id/lineConfirm"
+        android:text="Driver:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"/>
+
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:id="@+id/imgConfirm"
-        android:layout_below="@+id/lineConfirm"
+        android:layout_below="@+id/driverText"
         android:background="#000"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="300dp"
@@ -93,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/phoneConfirm"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp">
+        android:layout_marginTop="60dp">
 
         <Button
             android:layout_width="120dp"
