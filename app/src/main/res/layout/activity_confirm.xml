@@ -101,7 +101,8 @@
             android:id="@+id/butConfirm"
             android:text="CONFIRM"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="confirmConfirm" />
 
         <Button
             android:layout_width="120dp"
@@ -110,7 +111,8 @@
             android:text="CANCLE"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="20dp"
+            android:onClick="cancleConfirm" />
 
     </LinearLayout>
 
