@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     private String TAG = "GoDrive";
     private EditText emailLogin;
     private EditText passwordLogin;
+    private InputData inputdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,9 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+//                    inputdata.setUsername(firebaseAuth.getCurrentUser().getEmail());
                     Intent intent = new Intent(LoginActivity.this, WhereActivity.class);
+//                    intent.putExtra("inputdata", inputdata);
                     startActivity(intent);
                 } else {
                     // User is signed out
