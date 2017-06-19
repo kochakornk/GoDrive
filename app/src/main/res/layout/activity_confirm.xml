@@ -21,9 +21,9 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/nameConfirm"
+        android:id="@+id/desConfirm"
         android:layout_below="@+id/textConfirm"
-        android:hint="USER NAME"
+        android:hint="DESTINATION"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
@@ -31,9 +31,9 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/desConfirm"
-        android:layout_below="@id/nameConfirm"
-        android:hint="DESTINATION"
+        android:id="@+id/dateConfirm"
+        android:layout_below="@id/desConfirm"
+        android:hint="DATE"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
@@ -42,7 +42,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/timeConfirm"
-        android:layout_below="@id/desConfirm"
+        android:layout_below="@id/dateConfirm"
         android:hint="TIME"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"

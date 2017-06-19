@@ -31,6 +31,9 @@ public class DriverActivity extends AppCompatActivity {
         intent2.putExtra("Name",intent.getStringExtra("Name"));
         intent2.putExtra("number", intent.getStringExtra("number"));
         intent2.putExtra("Img", intent.getIntExtra("Img",0));
+        intent2.putExtra("placeEdit",intent.getStringExtra("placeEdit"));
+        intent2.putExtra("dateEdit",intent.getStringExtra("dateEdit"));
+        intent2.putExtra("timeEdit",intent.getStringExtra("timeEdit"));
         startActivity(intent2);
     }
 

@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import static com.example.suwan.godrivefinalproject.R.id.placeEdit;
+
 public class DestinationActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class DestinationActivity extends AppCompatActivity {
     }
 
     public void desRequest(View view) {
-        TextView place = (TextView) findViewById(R.id.placeEdit);
+        TextView place = (TextView) findViewById(placeEdit);
         TextView date = (TextView) findViewById(R.id.dateEdit);
         TextView time = (TextView) findViewById(R.id.timeEdit);
 
@@ -29,8 +31,13 @@ public class DestinationActivity extends AppCompatActivity {
                 && !timeText.matches(""))
         {
             Intent intent3 = new Intent(DestinationActivity.this, ListActivity.class);
+            intent3.putExtra("placeEdit",placeText);
+            intent3.putExtra("dateEdit",dateText);
+            intent3.putExtra("timeEdit",timeText);
             startActivity(intent3);
+
         }
+
     }
 
     public void desCancle(View view) {

@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ListActivity extends AppCompatActivity {
+    private Intent intent;
     private String[] dataList = {
             "Thitipoom Saingthong",
             "Kochakorn keitiwattanapong",
@@ -45,15 +46,21 @@ public class ListActivity extends AppCompatActivity {
         CustomListAdapter adapter = new CustomListAdapter(this, dataList, imgicon, nearby);
         list1.setAdapter(adapter);
 
+        intent = getIntent();
+
+
         final Context context = this;
         list1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(ListActivity.this , DriverActivity.class);
-                intent.putExtra("Name",dataList[position]);
-                intent.putExtra("Img", imgicon[position]);
-                intent.putExtra("number", phone[position]);
-                startActivity(intent);
+                Intent intent2 = new Intent(ListActivity.this , DriverActivity.class);
+                intent2.putExtra("Name",dataList[position]);
+                intent2.putExtra("Img", imgicon[position]);
+                intent2.putExtra("number", phone[position]);
+                intent2.putExtra("placeEdit",intent.getStringExtra("placeEdit"));
+                intent2.putExtra("dateEdit",intent.getStringExtra("dateEdit"));
+                intent2.putExtra("timeEdit",intent.getStringExtra("timeEdit"));
+                startActivity(intent2);
             }
         });
 

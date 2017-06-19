@@ -18,12 +18,20 @@ public class ConfirmActivity extends AppCompatActivity {
         ImageView Img = (ImageView) findViewById(R.id.imgConfirm);
         TextView Name = (TextView) findViewById(R.id.driverConfirm);
         TextView Phone = (TextView) findViewById(R.id.phoneConfirm);
+        TextView placeEdit = (TextView) findViewById(R.id.desConfirm);
+        TextView dateEdit = (TextView) findViewById(R.id.dateConfirm);
+        TextView timeEdit = (TextView) findViewById(R.id.timeConfirm);
+
 
 
         Intent intent = getIntent();
         Name.setText(intent.getStringExtra("Name"));
         Phone.setText(intent.getStringExtra("number"));
         Img.setImageResource(intent.getIntExtra("Img",0));
+        placeEdit.setText("Destination: "+intent.getStringExtra("placeEdit"));
+        dateEdit.setText("Date: " +intent.getStringExtra("dateEdit"));
+        timeEdit.setText("Time: " +intent.getStringExtra("timeEdit"));
+
 
     }
 
