@@ -28,11 +28,11 @@ public class ConfirmActivity extends AppCompatActivity {
     public void confirmConfirm(View view) {
         Intent intent = new Intent(ConfirmActivity.this, WhereActivity.class);
         startActivity(intent);
+        Toast.makeText(ConfirmActivity.this,"Thank You!", Toast.LENGTH_SHORT).show();
     }
 
     public void cancleConfirm(View view) {
         Intent intent2 = new Intent(ConfirmActivity.this, WhereActivity.class);
         startActivity(intent2);
-        Toast.makeText(ConfirmActivity.this,"Thank You!", Toast.LENGTH_SHORT).show();
     }
 }
