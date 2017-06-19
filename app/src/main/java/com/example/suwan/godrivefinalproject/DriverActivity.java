@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DriverActivity extends AppCompatActivity {
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +19,19 @@ public class DriverActivity extends AppCompatActivity {
         TextView Phone = (TextView) findViewById(R.id.phoneDriver);
         ImageView Img = (ImageView) findViewById(R.id.driveImg);
 
-        Intent intent = getIntent();
+        intent = getIntent();
         Name.setText(intent.getStringExtra("Name"));
         Phone.setText(intent.getStringExtra("number"));
         Img.setImageResource(intent.getIntExtra("Img",0));
+
     }
 
     public void requestDriver(View view) {
-        Intent intent = new Intent(DriverActivity.this, ConfirmActivity.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(DriverActivity.this, ConfirmActivity.class);
+        intent2.putExtra("Name",intent.getStringExtra("Name"));
+        intent2.putExtra("number", intent.getStringExtra("number"));
+        intent2.putExtra("Img", intent.getIntExtra("Img",0));
+        startActivity(intent2);
     }
 
     public void backDriver(View view) {

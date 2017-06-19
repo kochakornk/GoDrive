@@ -15,14 +15,16 @@ public class ConfirmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm);
 
-        ImageView Img = (ImageView) findViewById(R.id.driveImg);
-        TextView Name = (TextView) findViewById(R.id.nameDriver);
-        TextView Phone = (TextView) findViewById(R.id.phoneDriver);
+        ImageView Img = (ImageView) findViewById(R.id.imgConfirm);
+        TextView Name = (TextView) findViewById(R.id.driverConfirm);
+        TextView Phone = (TextView) findViewById(R.id.phoneConfirm);
 
-        //Intent intent = getIntent();
-        //Name.setText(intent.getStringExtra("Name"));
-        //Phone.setText(intent.getStringExtra("number"));
-        //Img.setImageResource(intent.getIntExtra("Img",0));
+
+        Intent intent = getIntent();
+        Name.setText(intent.getStringExtra("Name"));
+        Phone.setText(intent.getStringExtra("number"));
+        Img.setImageResource(intent.getIntExtra("Img",0));
+
     }
 
     public void confirmConfirm(View view) {
