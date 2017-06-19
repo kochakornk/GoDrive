@@ -34,6 +34,18 @@
         android:textSize="20dp"
         android:layout_marginTop="20dp" />
 
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/requestDriver"
+        android:text="REQUEST"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:onClick="requestDriver"
+        android:layout_below="@+id/phoneDriver"
+        android:layout_marginTop="80dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,12 +56,12 @@
         <Button
             android:layout_width="120dp"
             android:layout_height="60dp"
-            android:id="@+id/requestDriver"
-            android:text="REQUEST"
+            android:id="@+id/backDriver"
+            android:text="BACK"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:textStyle="bold"
-            android:onClick="requestDriver"/>
+            android:onClick="backDriver"/>
 
         <Button
             android:layout_width="120dp"

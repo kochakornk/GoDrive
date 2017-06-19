@@ -19,10 +19,10 @@ public class ConfirmActivity extends AppCompatActivity {
         TextView Name = (TextView) findViewById(R.id.nameDriver);
         TextView Phone = (TextView) findViewById(R.id.phoneDriver);
 
-        Intent intent = getIntent();
-        Name.setText(intent.getStringExtra("Name"));
-        Phone.setText(intent.getStringExtra("number"));
-        Img.setImageResource(intent.getIntExtra("Img",0));
+        //Intent intent = getIntent();
+        //Name.setText(intent.getStringExtra("Name"));
+        //Phone.setText(intent.getStringExtra("number"));
+        //Img.setImageResource(intent.getIntExtra("Img",0));
     }
 
     public void confirmConfirm(View view) {
