@@ -40,6 +40,7 @@ public class WhereActivity extends AppCompatActivity implements
     GoogleMap map;
 
     private Marker myLocationMarker;
+    private Marker nearLocationMarker;
 
     public static final int MY_PERMISSIONS_REQUEST =1;
     @Override
@@ -114,6 +115,11 @@ public class WhereActivity extends AppCompatActivity implements
                         .position(myLatLng)
                         .title("My Location"));
                 myLocationMarker.setTag("mylocation");
+
+                nearLocationMarker = map.addMarker(new MarkerOptions()
+                        .position(new LatLng(13.7300718,100.5791508))
+                        .title("Nearby Location"));
+                nearLocationMarker.setTag("nearlocation");
                 //Intent intent = new Intent(this,DestinationActivity.class);
                 //startActivity(intent);
                 map.setOnMarkerClickListener(this);
@@ -197,6 +203,11 @@ public class WhereActivity extends AppCompatActivity implements
         if(marker.getTag().equals("mylocation")) {
             Intent intent = new Intent(this,DestinationActivity.class);
             startActivity(intent);
+        } else {
+            if (marker.getTag().equals("nearlocation")) {
+                Intent intent = new Intent(this, DestinationActivity.class);
+                startActivity(intent);
+            }
         }
         return false;
     }
