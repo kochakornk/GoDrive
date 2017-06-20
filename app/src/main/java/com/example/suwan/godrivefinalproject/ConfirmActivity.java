@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class ConfirmActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +23,13 @@ public class ConfirmActivity extends AppCompatActivity {
         TextView placeEdit = (TextView) findViewById(R.id.desConfirm);
         TextView dateEdit = (TextView) findViewById(R.id.dateConfirm);
         TextView timeEdit = (TextView) findViewById(R.id.timeConfirm);
+        TextView useremail1 = (TextView) findViewById(R.id.useremail);
 
+//        FirebaseAth.getInstance().getCurrentUser.getEmail();
+//        FirebaseAth.getInstance().getCurrentUser.getEmail();
+
+        String useremail = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+        useremail1.setText(useremail);
 
 
         Intent intent = getIntent();

@@ -13,13 +13,15 @@ public class ListActivity extends AppCompatActivity {
     private String[] dataList = {
             "Thitipoom Saingthong",
             "Kochakorn keitiwattanapong",
-            "Monsieur jarn tae"
+            "Monsieur jarn tae",
+            "Tachakarn Loududomkul"
     };
 
     private Integer[] imgicon = {
             R.drawable.sky,
             R.drawable.nam,
             R.drawable.tae,
+            R.drawable.gon
 
     };
 
@@ -27,6 +29,7 @@ public class ListActivity extends AppCompatActivity {
             "Nearby love",
             "Nearby 800 metre",
             "Nearby 1 km",
+            "Nearby 2 km"
 
     };
 
@@ -34,6 +37,7 @@ public class ListActivity extends AppCompatActivity {
             "0819999999",
             "0999999999",
             "0888888888",
+            "0819998289"
     };
 
     @Override
